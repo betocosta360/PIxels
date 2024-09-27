@@ -2,7 +2,7 @@
   "expo": {
     "name": "Pixels",
     "slug": "Pixels",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -10,16 +10,18 @@
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#011023"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "versionCode":3,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.betocosta.Pixels"
     },
     "web": {
       "bundler": "metro",
@@ -29,8 +31,10 @@
     "plugins": [
       "expo-router"
     ],
-    "experiments": {
-      "typedRoutes": true
+    "extra": {
+      "eas": {
+        "projectId": "588df453-a0f1-4248-9dc1-f0e0618820c6"
+      }
     }
   }
 }
